@@ -38,12 +38,14 @@ namespace KataCheckout.Services
 
         public IEnumerable<StockKeepingUnitModel> GetAllItems()
         {
-            throw new NotImplementedException();
+            return _skus;
         }
 
         public string AddNewItem(StockKeepingUnitModel item)
         {
-            throw new NotImplementedException();
+            _skus.Add(item);
+
+            return $"Sku: {item.Sku} was added successfully";
         }
 
         public string DeleteItem(string sku)
