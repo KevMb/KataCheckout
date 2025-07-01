@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{891B62CB-CB28-43DB-AE7C-F3C87719E819}|KataCheckout\\KataCheckout.csproj|solutionrelative:katacheckout\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AD821BFD-80C5-4C60-85FC-817C81BA083D}|StockKeepingUnit\\StockKeepingUnit.csproj|c:\\users\\kevinmbumbe\\personal\\katacheckout\\katacheckout\\stockkeepingunit\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD821BFD-80C5-4C60-85FC-817C81BA083D}|StockKeepingUnit\\StockKeepingUnit.csproj|solutionrelative:stockkeepingunit\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{891B62CB-CB28-43DB-AE7C-F3C87719E819}|KataCheckout\\KataCheckout.csproj|c:\\users\\kevinmbumbe\\personal\\katacheckout\\katacheckout\\katacheckout\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{891B62CB-CB28-43DB-AE7C-F3C87719E819}|KataCheckout\\KataCheckout.csproj|solutionrelative:katacheckout\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8855803-DAE9-4054-A400-23566BCA2A7E}|KataCheckout.Tests\\KataCheckout.Tests.csproj|c:\\users\\kevinmbumbe\\personal\\katacheckout\\katacheckout\\katacheckout.tests\\stockkeepingunitservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8855803-DAE9-4054-A400-23566BCA2A7E}|KataCheckout.Tests\\KataCheckout.Tests.csproj|solutionrelative:katacheckout.tests\\stockkeepingunitservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{891B62CB-CB28-43DB-AE7C-F3C87719E819}|KataCheckout\\KataCheckout.csproj|c:\\users\\kevinmbumbe\\personal\\katacheckout\\katacheckout\\katacheckout\\services\\stockkeepingunitservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -37,24 +37,38 @@
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "DockedHeight": 200,
+          "SelectedChildIndex": -1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CheckoutController.cs",
-              "DocumentMoniker": "C:\\Users\\KevinMbumbe\\Personal\\KataCheckout\\KataCheckout\\KataCheckout\\Controllers\\CheckoutController.cs",
-              "RelativeDocumentMoniker": "KataCheckout\\Controllers\\CheckoutController.cs",
-              "ToolTip": "C:\\Users\\KevinMbumbe\\Personal\\KataCheckout\\KataCheckout\\KataCheckout\\Controllers\\CheckoutController.cs",
-              "RelativeToolTip": "KataCheckout\\Controllers\\CheckoutController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "StockKeepingUnitServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\KevinMbumbe\\Personal\\KataCheckout\\KataCheckout\\KataCheckout.Tests\\StockKeepingUnitServiceTests.cs",
+              "RelativeDocumentMoniker": "KataCheckout.Tests\\StockKeepingUnitServiceTests.cs",
+              "ToolTip": "C:\\Users\\KevinMbumbe\\Personal\\KataCheckout\\KataCheckout\\KataCheckout.Tests\\StockKeepingUnitServiceTests.cs",
+              "RelativeToolTip": "KataCheckout.Tests\\StockKeepingUnitServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T19:36:44.79Z",
+              "WhenOpened": "2025-07-01T20:30:53.507Z",
               "EditorCaption": ""
             },
             {
@@ -65,9 +79,35 @@
               "RelativeDocumentMoniker": "KataCheckout\\Services\\StockKeepingUnitService.cs",
               "ToolTip": "C:\\Users\\KevinMbumbe\\Personal\\KataCheckout\\KataCheckout\\KataCheckout\\Services\\StockKeepingUnitService.cs",
               "RelativeToolTip": "KataCheckout\\Services\\StockKeepingUnitService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-01T19:34:29.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\KevinMbumbe\\Personal\\KataCheckout\\KataCheckout\\KataCheckout\\Program.cs",
+              "RelativeDocumentMoniker": "KataCheckout\\Program.cs",
+              "ToolTip": "C:\\Users\\KevinMbumbe\\Personal\\KataCheckout\\KataCheckout\\KataCheckout\\Program.cs",
+              "RelativeToolTip": "KataCheckout\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T19:55:53.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CheckoutController.cs",
+              "DocumentMoniker": "C:\\Users\\KevinMbumbe\\Personal\\KataCheckout\\KataCheckout\\KataCheckout\\Controllers\\CheckoutController.cs",
+              "RelativeDocumentMoniker": "KataCheckout\\Controllers\\CheckoutController.cs",
+              "ToolTip": "C:\\Users\\KevinMbumbe\\Personal\\KataCheckout\\KataCheckout\\KataCheckout\\Controllers\\CheckoutController.cs",
+              "RelativeToolTip": "KataCheckout\\Controllers\\CheckoutController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE4AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T19:36:44.79Z",
               "EditorCaption": ""
             },
             {
@@ -78,7 +118,7 @@
               "RelativeDocumentMoniker": "KataCheckout\\Services\\Interfaces\\IStockKeepingUnitService.cs",
               "ToolTip": "C:\\Users\\KevinMbumbe\\Personal\\KataCheckout\\KataCheckout\\KataCheckout\\Services\\Interfaces\\IStockKeepingUnitService.cs",
               "RelativeToolTip": "KataCheckout\\Services\\Interfaces\\IStockKeepingUnitService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-01T19:33:34.116Z",
               "EditorCaption": ""
@@ -91,7 +131,7 @@
               "RelativeDocumentMoniker": "KataCheckout\\Models\\StockKeepingUnitModel.cs",
               "ToolTip": "C:\\Users\\KevinMbumbe\\Personal\\KataCheckout\\KataCheckout\\KataCheckout\\Models\\StockKeepingUnitModel.cs",
               "RelativeToolTip": "KataCheckout\\Models\\StockKeepingUnitModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-01T19:30:50.342Z",
               "EditorCaption": ""
@@ -110,47 +150,16 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\KevinMbumbe\\Personal\\KataCheckout\\KataCheckout\\StockKeepingUnit\\Program.cs",
-              "RelativeDocumentMoniker": "StockKeepingUnit\\Program.cs",
-              "ToolTip": "C:\\Users\\KevinMbumbe\\Personal\\KataCheckout\\KataCheckout\\StockKeepingUnit\\Program.cs",
-              "RelativeToolTip": "StockKeepingUnit\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T19:27:55.947Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\KevinMbumbe\\Personal\\KataCheckout\\KataCheckout\\KataCheckout\\Program.cs",
-              "RelativeDocumentMoniker": "KataCheckout\\Program.cs",
-              "ToolTip": "C:\\Users\\KevinMbumbe\\Personal\\KataCheckout\\KataCheckout\\KataCheckout\\Program.cs",
-              "RelativeToolTip": "KataCheckout\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T19:23:46.676Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "KataCheckout",
+              "Title": "KataCheckout.csproj",
               "DocumentMoniker": "C:\\Users\\KevinMbumbe\\Personal\\KataCheckout\\KataCheckout\\KataCheckout\\KataCheckout.csproj",
               "RelativeDocumentMoniker": "KataCheckout\\KataCheckout.csproj",
               "ToolTip": "C:\\Users\\KevinMbumbe\\Personal\\KataCheckout\\KataCheckout\\KataCheckout\\KataCheckout.csproj",
               "RelativeToolTip": "KataCheckout\\KataCheckout.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-01T19:24:13.985Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-01T19:24:13.985Z"
             }
           ]
         }

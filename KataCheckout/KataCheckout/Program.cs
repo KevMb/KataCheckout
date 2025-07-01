@@ -1,6 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-using KataCheckout.Controller;
+﻿using KataCheckout.Controller;
+using KataCheckout.Services;
+using Microsoft.Extensions.DependencyInjection;
 
-// Entry point
-var controller = new CheckoutController();
-Console.WriteLine("Hello, World!");
+var services = new ServiceCollection();
+services.AddSingleton<StockKeepingUnitService>();
+services.AddTransient<CheckoutController>();
+var provider = services.BuildServiceProvider();
+
+var controller = provider.GetRequiredService<CheckoutController>();
+controller.ShowMenu();
