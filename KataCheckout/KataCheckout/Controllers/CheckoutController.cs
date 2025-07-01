@@ -19,6 +19,12 @@ namespace KataCheckout.Controller
                 Console.WriteLine("\nSKU List:");
                 foreach (var sku in _skuService.GetAllItems())
                 {
+                    if (sku.SpecialPrice == null)
+                    {
+                        Console.WriteLine($"SKU: {sku.Sku}, Price: {sku.UnitPrice}");
+                        continue;
+                    }
+
                     Console.WriteLine($"SKU: {sku.Sku}, Price: {sku.UnitPrice}, Special: {sku.SpecialPrice?.Quantity} for {sku.SpecialPrice?.Price}");
                 }
 
@@ -26,8 +32,9 @@ namespace KataCheckout.Controller
                 Console.WriteLine("1. Checkout");
                 Console.WriteLine("2. Add SKU");
                 Console.WriteLine("3. Update SKU");
-                Console.WriteLine("4. Exit");
-                Console.WriteLine("5. Add SKU");
+                Console.WriteLine("4. Delete SKU");
+                Console.WriteLine("5. Delete Special Rule");
+                Console.WriteLine("6. Exit");
                 Console.Write("Select an option: ");
                 var input = Console.ReadLine();
 
@@ -47,6 +54,9 @@ namespace KataCheckout.Controller
                         break;
                     case "5":
                         DeleteSpecialRule();
+                        break;
+                    case "6":
+                        Console.WriteLine("Exiting...");
                         return;
                     default:
                         Console.WriteLine("Invalid option.");

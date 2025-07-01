@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KataCheckout")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+073bdd32692e41a45fd34c9c4ca8319a1cda422e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43a2f6275847ced512c2748505f2a5af38cdd6a4")]
 [assembly: System.Reflection.AssemblyProductAttribute("KataCheckout")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KataCheckout")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
