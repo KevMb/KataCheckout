@@ -1,0 +1,15 @@
+C:\Users\KevinMbumbe\Personal\KataCheckout\KataCheckout\KataCheckout\bin\Debug\net8.0\KataCheckout.exe
+C:\Users\KevinMbumbe\Personal\KataCheckout\KataCheckout\KataCheckout\bin\Debug\net8.0\KataCheckout.deps.json
+C:\Users\KevinMbumbe\Personal\KataCheckout\KataCheckout\KataCheckout\bin\Debug\net8.0\KataCheckout.runtimeconfig.json
+C:\Users\KevinMbumbe\Personal\KataCheckout\KataCheckout\KataCheckout\bin\Debug\net8.0\KataCheckout.dll
+C:\Users\KevinMbumbe\Personal\KataCheckout\KataCheckout\KataCheckout\bin\Debug\net8.0\KataCheckout.pdb
+C:\Users\KevinMbumbe\Personal\KataCheckout\KataCheckout\KataCheckout\obj\Debug\net8.0\KataCheckout.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KevinMbumbe\Personal\KataCheckout\KataCheckout\KataCheckout\obj\Debug\net8.0\KataCheckout.AssemblyInfoInputs.cache
+C:\Users\KevinMbumbe\Personal\KataCheckout\KataCheckout\KataCheckout\obj\Debug\net8.0\KataCheckout.AssemblyInfo.cs
+C:\Users\KevinMbumbe\Personal\KataCheckout\KataCheckout\KataCheckout\obj\Debug\net8.0\KataCheckout.csproj.CoreCompileInputs.cache
+C:\Users\KevinMbumbe\Personal\KataCheckout\KataCheckout\KataCheckout\obj\Debug\net8.0\KataCheckout.sourcelink.json
+C:\Users\KevinMbumbe\Personal\KataCheckout\KataCheckout\KataCheckout\obj\Debug\net8.0\KataCheckout.dll
+C:\Users\KevinMbumbe\Personal\KataCheckout\KataCheckout\KataCheckout\obj\Debug\net8.0\refint\KataCheckout.dll
+C:\Users\KevinMbumbe\Personal\KataCheckout\KataCheckout\KataCheckout\obj\Debug\net8.0\KataCheckout.pdb
+C:\Users\KevinMbumbe\Personal\KataCheckout\KataCheckout\KataCheckout\obj\Debug\net8.0\KataCheckout.genruntimeconfig.cache
+C:\Users\KevinMbumbe\Personal\KataCheckout\KataCheckout\KataCheckout\obj\Debug\net8.0\ref\KataCheckout.dll

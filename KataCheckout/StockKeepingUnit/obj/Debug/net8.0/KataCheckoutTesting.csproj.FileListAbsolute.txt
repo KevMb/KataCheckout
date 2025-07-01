@@ -1,0 +1,15 @@
+C:\Users\KevinMbumbe\Personal\KataCheckout\KataCheckout\StockKeepingUnit\bin\Debug\net8.0\KataCheckoutTesting.exe
+C:\Users\KevinMbumbe\Personal\KataCheckout\KataCheckout\StockKeepingUnit\bin\Debug\net8.0\KataCheckoutTesting.deps.json
+C:\Users\KevinMbumbe\Personal\KataCheckout\KataCheckout\StockKeepingUnit\bin\Debug\net8.0\KataCheckoutTesting.runtimeconfig.json
+C:\Users\KevinMbumbe\Personal\KataCheckout\KataCheckout\StockKeepingUnit\bin\Debug\net8.0\KataCheckoutTesting.dll
+C:\Users\KevinMbumbe\Personal\KataCheckout\KataCheckout\StockKeepingUnit\bin\Debug\net8.0\KataCheckoutTesting.pdb
+C:\Users\KevinMbumbe\Personal\KataCheckout\KataCheckout\StockKeepingUnit\obj\Debug\net8.0\KataCheckoutTesting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KevinMbumbe\Personal\KataCheckout\KataCheckout\StockKeepingUnit\obj\Debug\net8.0\KataCheckoutTesting.AssemblyInfoInputs.cache
+C:\Users\KevinMbumbe\Personal\KataCheckout\KataCheckout\StockKeepingUnit\obj\Debug\net8.0\KataCheckoutTesting.AssemblyInfo.cs
+C:\Users\KevinMbumbe\Personal\KataCheckout\KataCheckout\StockKeepingUnit\obj\Debug\net8.0\KataCheckoutTesting.csproj.CoreCompileInputs.cache
+C:\Users\KevinMbumbe\Personal\KataCheckout\KataCheckout\StockKeepingUnit\obj\Debug\net8.0\KataCheckoutTesting.sourcelink.json
+C:\Users\KevinMbumbe\Personal\KataCheckout\KataCheckout\StockKeepingUnit\obj\Debug\net8.0\KataCheckoutTesting.dll
+C:\Users\KevinMbumbe\Personal\KataCheckout\KataCheckout\StockKeepingUnit\obj\Debug\net8.0\refint\KataCheckoutTesting.dll
+C:\Users\KevinMbumbe\Personal\KataCheckout\KataCheckout\StockKeepingUnit\obj\Debug\net8.0\KataCheckoutTesting.pdb
+C:\Users\KevinMbumbe\Personal\KataCheckout\KataCheckout\StockKeepingUnit\obj\Debug\net8.0\KataCheckoutTesting.genruntimeconfig.cache
+C:\Users\KevinMbumbe\Personal\KataCheckout\KataCheckout\StockKeepingUnit\obj\Debug\net8.0\ref\KataCheckoutTesting.dll
