@@ -78,5 +78,108 @@ namespace KataCheckout.Tests
 
             skuService.Verify(s => s.AddNewItem(It.IsAny<StockKeepingUnitModel>()), Times.Once);
         }
+
+        [Fact]
+        public void DeleteSkuItemFail()
+        {
+            var skuService = new Mock<IStockKeepingUnitService>();
+            var skuToDelete = "Z";
+            var expectedExceptionMessage = "Sku not found";
+
+            skuService.Setup(s => s.DeleteItem(skuToDelete))
+                .Throws(new Exception(expectedExceptionMessage));
+
+            var ex = Assert.Throws<Exception>(() => skuService.Object.DeleteItem(skuToDelete));
+            _output.WriteLine($"Exception thrown: {ex.Message}");
+
+            skuService.Verify(s => s.DeleteItem(skuToDelete), Times.Once);
+        }
+
+
+        [Fact]
+        public void DeleteSkuItem()
+        {
+            var skuService = new Mock<IStockKeepingUnitService>();
+            var skuToDelete = "A";
+            var expectedMessage = $"Sku: {skuToDelete} was deleted successfully";
+
+            skuService.Setup(s => s.DeleteItem(skuToDelete)).Returns(expectedMessage);
+
+            var result = skuService.Object.DeleteItem(skuToDelete);
+
+            _output.WriteLine($"DeleteItem result: {result}");
+
+            Assert.Equal(expectedMessage, result);
+            skuService.Verify(s => s.DeleteItem(skuToDelete), Times.Once);
+        }
+
+        [Fact]
+        public void DeleteSpecialPriceRuleFail()
+        {
+            var skuService = new Mock<IStockKeepingUnitService>();
+            var sku = "X";
+            var expectedExceptionMessage = "Special price rule not found";
+
+            skuService.Setup(s => s.DeleteSpecialPriceRule(sku))
+                .Throws(new Exception(expectedExceptionMessage));
+
+            var ex = Assert.Throws<Exception>(() => skuService.Object.DeleteSpecialPriceRule(sku));
+            _output.WriteLine($"Exception thrown: {ex.Message}");
+
+            skuService.Verify(s => s.DeleteSpecialPriceRule(sku), Times.Once);
+        }
+
+        [Fact]
+        public void DeleteSpecialPriceRuleSuccess()
+        {
+            var skuService = new Mock<IStockKeepingUnitService>();
+            var sku = "A";
+            var expectedMessage = $"Special price rule for Sku: {sku} was deleted successfully";
+
+            skuService.Setup(s => s.DeleteSpecialPriceRule(sku)).Returns(expectedMessage);
+
+            var result = skuService.Object.DeleteSpecialPriceRule(sku);
+            _output.WriteLine($"DeleteSpecialPriceRule result: {result}");
+
+            Assert.Equal(expectedMessage, result);
+            skuService.Verify(s => s.DeleteSpecialPriceRule(sku), Times.Once);
+        }
+
+        [Fact]
+        public void UpdateItemFail()
+        {
+            var skuService = new Mock<IStockKeepingUnitService>();
+            var itemToUpdate = new StockKeepingUnitModel { Sku = "Z", UnitPrice = 99 };
+            var expectedExceptionMessage = "Sku: Z not found";
+
+            skuService.Setup(s => s.UpdateItem(itemToUpdate))
+                .Throws(new Exception(expectedExceptionMessage));
+
+            var ex = Assert.Throws<Exception>(() => skuService.Object.UpdateItem(itemToUpdate));
+            _output.WriteLine($"Exception thrown: {ex.Message}");
+
+            skuService.Verify(s => s.UpdateItem(itemToUpdate), Times.Once);
+        }
+
+        [Fact]
+        public void UpdateItemSuccess()
+        {
+            var skuService = new Mock<IStockKeepingUnitService>();
+            var itemToUpdate = new StockKeepingUnitModel
+            {
+                Sku = "A",
+                UnitPrice = 60,
+                SpecialPrice = new SpecialPriceModel { Quantity = 2, Price = 100 }
+            };
+            var expectedMessage = $"Sku: {itemToUpdate.Sku} was updated successfully";
+
+            skuService.Setup(s => s.UpdateItem(itemToUpdate)).Returns(expectedMessage);
+
+            var result = skuService.Object.UpdateItem(itemToUpdate);
+            _output.WriteLine($"UpdateItem result: {result}");
+
+            Assert.Equal(expectedMessage, result);
+            skuService.Verify(s => s.UpdateItem(itemToUpdate), Times.Once);
+        }
     }
 }

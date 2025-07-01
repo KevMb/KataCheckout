@@ -50,17 +50,45 @@ namespace KataCheckout.Services
 
         public string DeleteItem(string sku)
         {
-            throw new NotImplementedException();
+            _skus.RemoveAll(x => x.Sku.Equals(sku, StringComparison.OrdinalIgnoreCase));
+
+            return $"Sku: {sku} was deleted successfully";
         }
 
         public string DeleteSpecialPriceRule(string sku)
         {
-            throw new NotImplementedException();
+            var item = _skus.FirstOrDefault(x => x.Sku.Equals(sku, StringComparison.OrdinalIgnoreCase));
+            if (item is null)
+            {
+                return $"Sku: {sku} not found";
+            }
+
+            if (item.SpecialPrice is null)
+            {
+                return $"Sku: {sku} does not have a special price rule";
+            }
+
+            item.SpecialPrice = null;
+            return $"Special price rule for Sku: {sku} was deleted successfully";
         }
 
         public string UpdateItem(StockKeepingUnitModel item)
         {
-            throw new NotImplementedException();
+            if (item is null || string.IsNullOrWhiteSpace(item.Sku))
+            {
+                return "Invalid SKU item provided";
+            }
+
+            var sku = _skus.FirstOrDefault(x => x.Sku.Equals(item.Sku, StringComparison.OrdinalIgnoreCase));
+            if (sku is null)
+            {
+                return $"Sku: {item.Sku} not found";
+            }
+
+            sku.UnitPrice = item.UnitPrice;
+            sku.SpecialPrice = item.SpecialPrice;
+
+            return $"Sku: {item.Sku} was updated successfully";
         }
     }
 }
