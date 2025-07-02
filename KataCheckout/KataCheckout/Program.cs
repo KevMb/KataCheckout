@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 var services = new ServiceCollection();
 services.AddSingleton<IStockKeepingUnitService, StockKeepingUnitService>();
+services.AddSingleton<IPriceService, PriceService>();
 
 services.AddTransient<CheckoutController>();
 var provider = services.BuildServiceProvider();

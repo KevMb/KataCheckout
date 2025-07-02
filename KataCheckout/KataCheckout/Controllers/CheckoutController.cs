@@ -5,10 +5,13 @@ namespace KataCheckout.Controller
 {
     public class CheckoutController
     {
+        private readonly IPriceService _priceService;
         private readonly IStockKeepingUnitService _skuService;
 
-        public CheckoutController(IStockKeepingUnitService skuService)
+        public CheckoutController(IPriceService priceService,
+            IStockKeepingUnitService skuService)
         {
+            _priceService = priceService;
             _skuService = skuService;
         }
 
@@ -67,7 +70,45 @@ namespace KataCheckout.Controller
 
         private void Checkout()
         {
+            Console.WriteLine("Enter SKUs to checkout (single letters, e.g., A, B, C):");
+            var input = Console.ReadLine();
 
+            if (string.IsNullOrWhiteSpace(input))
+            {
+                Console.WriteLine("No SKUs entered.");
+                return;
+            }
+
+            var skus = input.Split(',').Select(s => s.Trim()).ToList();
+
+            foreach (var sku in skus)
+            {
+                if (sku.Length != 1 || !char.IsLetter(sku[0]))
+                {
+                    Console.WriteLine($"Invalid SKU: {sku}. Must be a single letter.");
+                    return;
+                }
+                _priceService.AddToCart(sku);
+            }
+
+            var totalPrice = _priceService.TotalPrice();
+            Console.WriteLine($"Total price: £{totalPrice}");
+
+            Console.WriteLine("Would you like to clear the checkout? Y/N");
+            var clearInput = Console.ReadLine()?.Trim().ToUpper();
+            if (clearInput == "Y")
+            {
+                _priceService.Clear();
+                Console.WriteLine("Checkout cleared.");
+            }
+            else if (clearInput == "N")
+            {
+                Console.WriteLine("Checkout not cleared.");
+            }
+            else
+            {
+                Console.WriteLine("Invalid input. Checkout not cleared.");
+            }
         }
 
         private void AddSku()
